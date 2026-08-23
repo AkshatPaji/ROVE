@@ -15,9 +15,9 @@ I worked out the basic circuit and decided how the Arduino, L298N, motors and HC
 
 I also spent some time tinkering with the components and figuring out how everything would fit together.
 
-![Circuit planning](wiring-diagram.png)
+<img width="1893" height="1016" alt="image" src="https://github.com/user-attachments/assets/250d581b-57fd-4527-a839-e26778f199af" />
 
-**Time: 12 PM – 1 PM**
+** Time: 12 PM – 1 PM**
 
 ---
 
@@ -29,7 +29,9 @@ I added the basic movement commands for forward, backward, left, right and stop.
 
 The main thing I wanted was for the rover to stop if it detected something too close while moving forward.
 
-**Time: 2 PM – 4 PM**
+** Time: 2 PM – 4 PM**
+
+### Check code.ino...
 
 ---
 
@@ -43,11 +45,12 @@ I then wired up the HC-SR04 and connected the rest of the components according t
 
 A lot of this session was just testing connections, moving things around and making sure the physical build matched the circuit.
 
-![ROVE build](rover-build.jpg)
+<img width="3840" height="2160" alt="IMG_20260823_223311_281" src="https://github.com/user-attachments/assets/15890cb2-96cd-4df3-9a80-d519b7199a3c" />
+
 
 After around six hours of building and tinkering, I had the first physical version of ROVE put together.
 
-**Time: 4 PM – 10 PM**
+** Time: 4 PM – 10 PM**
 
 ---
 
@@ -58,3 +61,6 @@ The first prototype is now assembled.
 I now have the basic hardware needed for ROVE to move and detect obstacles. The next step is to build the phone controller and connect it to the Arduino so I can actually drive ROVE from my phone.
 
 **Total time spent today: 8h**
+
+## Demo Video
+
