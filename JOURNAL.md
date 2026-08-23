@@ -63,4 +63,4 @@ I now have the basic hardware needed for ROVE to move and detect obstacles. The 
 **Total time spent today: 8h**
 
 ## Demo Video
-![](/demo.mp4)
+![Video](/demo.mp4)
