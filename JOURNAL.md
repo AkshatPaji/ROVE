@@ -63,6 +63,4 @@ I now have the basic hardware needed for ROVE to move and detect obstacles. The 
 **Total time spent today: 8h**
 
 ## Demo Video
-<video width="600" height="540" controls>
-  <source src="demo.mp4" type="video/mp4">
-</video>
+demo.mp4
