@@ -15,7 +15,7 @@ I worked out the basic circuit and decided how the Arduino, L298N, motors and HC
 
 I also spent some time tinkering with the components and figuring out how everything would fit together.
 
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/250d581b-57fd-4527-a839-e26778f199af" />
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/250d581b-57fd-4527-a839-e26778f199af" />
 
 ** Time: 12 PM – 1 PM**
 
