@@ -15,7 +15,7 @@ I worked out the basic circuit and decided how the Arduino, L298N, motors and HC
 
 I also spent some time tinkering with the components and figuring out how everything would fit together.
 
-<img width="1893" height="1016" alt="image" src="https://github.com/user-attachments/assets/250d581b-57fd-4527-a839-e26778f199af" />
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/250d581b-57fd-4527-a839-e26778f199af" />
 
 ** Time: 12 PM – 1 PM**
 
@@ -45,7 +45,7 @@ I then wired up the HC-SR04 and connected the rest of the components according t
 
 A lot of this session was just testing connections, moving things around and making sure the physical build matched the circuit.
 
-<img width="3840" height="2160" alt="IMG_20260823_223311_281" src="https://github.com/user-attachments/assets/15890cb2-96cd-4df3-9a80-d519b7199a3c" />
+<img width="1840" height="960" alt="IMG_20260823_223311_281" src="https://github.com/user-attachments/assets/15890cb2-96cd-4df3-9a80-d519b7199a3c" />
 
 
 After around six hours of building and tinkering, I had the first physical version of ROVE put together.
