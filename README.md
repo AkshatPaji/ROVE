@@ -9,7 +9,7 @@ The goal of ROVE is simple: control a small rover from a phone while giving it b
 ## Features
 
 - 📱 Phone-controlled movement
-- 🛞 2WD drive system
+- 🛞 4WD drive system
 - 📡 HC-SR04 ultrasonic obstacle detection
 - ⚡ Variable motor speed
 - 🔌 USB serial communication
@@ -29,7 +29,7 @@ The HC-SR04 is connected directly to the Arduino. Before moving forward, the Ard
 - Arduino Uno R3
 - L298N motor driver
 - 2WD chassis
-- 2 DC motors
+- 4 DC motors
 - HC-SR04 ultrasonic sensor
 - Phone
 - USB cable
