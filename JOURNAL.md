@@ -1,8 +1,4 @@
 # ROVE — Project Journal
-
-**Project:** ROVE
-**Date:** 20 August 2026
-**Total estimated time:** 10 hours
 ------------------------
 
 # August 20: Planning
