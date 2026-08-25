@@ -1,5 +1,3 @@
-# ROVE — Project Journal
-------------------------
 
 # August 20: Planning
 
