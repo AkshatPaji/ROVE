@@ -1,66 +1,67 @@
 ---
+
 title: "ROVE"
-github: "YOUR_GITHUB_USERNAME/ROVE"
-description: "Building ROVE, a phone-controlled rover."
-created_at: "2026-08-23"
----
+author: "Akshat Jain"
+description: "A phone-controlled Arduino rover with ultrasonic obstacle detection."
+created_at: "2026-08-20"
+------------------------
 
-# August 23rd: Planning ROVE
+# August 20: Planning
 
-Today I started working on ROVE.
+I started with the idea of making a small rover that I could control from my phone. I wanted to keep the build simple and use the Arduino for the actual control instead of putting everything on the phone.
 
-I spent the first part of the session figuring out what I wanted the first version to actually do. Instead of trying to build the complete idea immediately, I decided to start with a simple phone-controlled rover with obstacle avoidance.
+The parts I planned around were an Arduino Uno, L298N motor driver, four DC motors and an HC-SR04 ultrasonic sensor. The phone would communicate with the Arduino over USB serial.
 
-I worked out the basic circuit and decided how the Arduino, L298N, motors and HC-SR04 would connect.
+The main controls I planned were forward, backward, left, right and stop, with the ultrasonic sensor being used to stop the rover if something was too close in front.
 
-I also spent some time tinkering with the components and figuring out how everything would fit together.
-
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/250d581b-57fd-4527-a839-e26778f199af" />
-
-** Time: 12 PM – 1 PM**
-
----
-
-# August 23rd: Writing the Code
-
-After finishing the initial planning, I started writing the Arduino code.
-
-I added the basic movement commands for forward, backward, left, right and stop. I also added PWM speed control and code for reading the HC-SR04.
-
-The main thing I wanted was for the rover to stop if it detected something too close while moving forward.
-
-** Time: 2 PM – 4 PM**
-
-### Check code.ino...
-
----
-
-# August 23rd: Building ROVE
-
-I moved on to the physical build.
-
-I assembled the chassis, mounted the motors and connected the L298N motor driver to the Arduino.
-
-I then wired up the HC-SR04 and connected the rest of the components according to the circuit I had planned earlier.
-
-A lot of this session was just testing connections, moving things around and making sure the physical build matched the circuit.
-
-<img width="1840" height="960" alt="IMG_20260823_223311_281" src="https://github.com/user-attachments/assets/15890cb2-96cd-4df3-9a80-d519b7199a3c" />
+<img width="1561" height="932" alt="image" src="https://github.com/user-attachments/assets/916af166-2ac8-405b-98ed-bf536f72e73d" />
 
 
-After around six hours of building and tinkering, I had the first physical version of ROVE put together.
+**Total time spent: 1.5 hours**
 
-** Time: 4 PM – 10 PM**
+# August 20: Circuit Online
 
----
+I made the circuit online before building it physically so I could work out the connections first.
 
-# August 23rd: First Prototype Complete
+The L298N handles the four motors. D5 and D6 are used as the enable pins for PWM speed control, while D8-D11 are used for the motor directions.
 
-The first prototype is now assembled.
+For the HC-SR04, I used D2 for TRIG and D3 for ECHO.
 
-I now have the basic hardware needed for ROVE to move and detect obstacles. The next step is to build the phone controller and connect it to the Arduino so I can actually drive ROVE from my phone.
+Once the circuit looked right, I used it as the reference for the real wiring.
 
-**Total time spent today: 8h**
+<img width="1893" height="1016" alt="screenshot-2026-08-23_17-04-26" src="https://github.com/user-attachments/assets/c663742c-41a8-4e80-9196-d9a8582f6517" />
 
-## Demo Video
-![Video](/demo.mp4)
+
+**Total time spent: 2 hours**
+
+# August 20: Code
+
+I wrote the Arduino code around the circuit.
+
+The rover reads commands through serial at 9600 baud. `F`, `B`, `L`, `R` and `S` control the movement. I also added `+` and `-` for changing the speed and `D` for requesting the distance.
+
+The starting speed is 180 and it can be changed between 0 and 255.
+
+After the basic movement was working, I added the HC-SR04. The forward command checks the distance before moving. If something is within 20 cm, the rover stops instead of moving forward.
+
+I also added a timeout to the ultrasonic reading so that a missing echo doesn't cause the rover to wait forever.
+
+<img width="1380" height="902" alt="image" src="https://github.com/user-attachments/assets/20db4d12-8654-4cf2-88d3-4565070b155c" />
+
+**Total time spent: 3 hours**
+
+# August 20: Real Thing
+
+After finishing the online circuit and code, I built the actual rover.
+
+I connected the Arduino, L298N, four motors and HC-SR04 according to the circuit and then tested the commands one by one. I checked the motor directions first and then tested the ultrasonic stop.
+
+Once the basic movement and obstacle detection were working together, I recorded the demo and added the project files to the repository.
+
+The final prototype is controlled from the phone through USB serial, while the Arduino handles the motors, speed control and ultrasonic distance check.
+
+<img width="3840" height="2160" alt="IMG_20260823_223311_281" src="https://github.com/user-attachments/assets/81f6659d-6e55-4b87-aa86-1a70217f3ec6" />
+
+/demo.mp4
+
+**Total time spent: 3.5 hours**
