@@ -74,9 +74,6 @@ If the measured distance is below the configured safe distance, the Arduino stop
 
 Obstacle detection is handled directly by the Arduino, so the rover can react without relying on the phone.
 
-## Circuit
-
-![ROVE Circuit Diagram](wiring-diagram.png)
 
 ## Software
 
