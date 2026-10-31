@@ -57,4 +57,4 @@ The final prototype is controlled from the phone through USB serial, while the A
 
 /demo.mp4
 
-**Total time spent: 3.5 hours**
+**Total time spent: 5.5 hours**
